@@ -1,0 +1,107 @@
+# STA130 Project Personal Proposal - CSCS Data Analysis
+
+
+### Analysis 1: UCLA Loneliness Scale & Life Satisfaction
+
+## Research question
+
+**What is the relationship between loneliness and overall life satisfaction? Is there a significant difference in life satisfaction between those who score high vs. low on the loneliness scale?
+
+**Variables:
+-LONELY_ucla_loneliness_scale_score: Composite loneliness score.
+-WELLNESS_life_satisfaction: Self-reported life satisfaction on a 1-10 scale.
+
+## My analysis plan
+
+1. Box plot: showing life satisfaction distributions for different loneliness score groups
+   (will categorize loneliness scores into low/medium/high based on quartiles).
+2. Scatter plot: with curve showing relationship between raw scores.
+3. Summary statistics (mean, median, SD) of life satisfaction for each loneliness group.
+
+These visualizations will help understand both the continuous relationship and categorical differences
+in life satisfaction across loneliness levels.
+
+Pay attention to:
+1. Normality within groups
+2. Homogeneity of variances
+3. Independence of observations
+
+## Expected results
+
+I hypothesize that individuals with higher loneliness scores will report significantly lower life satisfaction.
+
+Expect to see:
+1. Clear negative trend in scatter plot.
+2. Meaningful differences between high and low loneliness groups in the test.
+
+Results would provide evidence for the impact of loneliness on overall well-being and could help
+identify threshold levels of loneliness that are particularly associated with decreased life satisfaction.
+
+
+### Analysis 2: Social Support & Emotional Loneliness
+
+## Research question
+
+**What is the relationship between perceived social support and emotional loneliness? Is there a significant negative correlation as theory would suggest?
+
+**Variables:
+-PSYCH_zimet_multidimensional_social_support_scale_score
+-LONELY_dejong_emotional_loneliness_sub_scale_score
+
+## My analysis plan
+
+1. Scatter plot with regression line to visualize relationship
+2. Correlation matrix heatmap including subscales of social support
+3. Descriptive statistics for both measures
+
+These will help understand the strength and direction of relationships between variables.
+
+Simple linear regression with:
+- Dependent variable: Emotional loneliness score
+- Independent variable: Social support score
+
+Will assess:
+1. R-squared value for model fit
+2. Regression coefficient significance
+3. Residual analysis for assumptions
+
+## Expected results
+
+May find a significant negative relationship between social support and emotional loneliness.
+Higher social support scores should predict lower emotional loneliness scores. This would validate
+theoretical frameworks and indicates the importance of social support interventions.
+
+
+### Analysis 3: Changes in COVID-19 Prevention Behaviors
+
+## Research question
+
+**What proportion of participants maintained strict COVID-19 prevention practices between 2021 and 2022? 
+Construct 95% confidence interval for this population parameter.
+
+**Using variables:
+-COVID_prevention_masks
+-COVID_prevention_distancing
+-COVID_prevention_hand_washing
+
+## Planned visualization & summary statistics
+
+1. Stacked bar charts showing prevention behavior distributions
+2. Contingency tables comparing 2021 vs 2022 responses
+3. Summary of consistency in responses across years
+
+These will help visualize changes in prevention behaviors over time.
+
+## My analysis plan
+
+1. Create composite prevention score from multiple measures
+2. Calculate proportion maintaining "Very closely" responses
+3. Construct 95% confidence interval using:
+   -Normal approximation method for proportion
+   -Wilson score interval for more accurate bounds
+
+## Expected results
+
+Expect to find that a significant proportion (perhaps 40-60%) maintained strict prevention practices,
+but with a decline from 2021 to 2022. The confidence interval will provide a plausible range for the
+true population proportion and help inform public health messaging strategies.
